@@ -9,6 +9,7 @@ module FakerUnique
   end
 
   class UniqueProxy
+    attr_reader :pool
     attr_writer :max_retries
 
     def initialize(klass)
