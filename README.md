@@ -24,7 +24,7 @@ Or install it yourself as:
 # return unique values
 1000.times.map { Faker::Name.uniq.name }.uniq.size # => 1000
 
-# change number of max retries to generate the unique value, default value is `100`
+# Optional argument max retries=100
 Faker::Internet.uniq(1000).email
 
 # raise an error when it can't generate a valid value
